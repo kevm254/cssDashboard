@@ -1,5 +1,6 @@
 import React from 'react';
 import BrowserRates from './BrowserRates';
+import ProgressTask from './ProgressTask';
 
 export default (props) => {
     return (
@@ -12,7 +13,7 @@ export default (props) => {
                             <div className="col-xl-6 col-12 mb-4 mb-xl-0">
                                 <div className="bg-dark text-white p-4 rounded">
 
-                                        <BrowserRates browser="Google Chrome" percentage="91%" />
+                                        <BrowserRates browser="Google Chrome" percentage={5} />
                                         <BrowserRates browser="Mozilla Firefox" percentage="82%" />
                                         <BrowserRates browser="Safari" percentage="67%" />
                                         <BrowserRates browser="IE" percentage="10%" />
@@ -20,7 +21,14 @@ export default (props) => {
                                 </div>
                             </div>
 
-                            <div className="col-xl-6 col-12"></div>
+                            <div className="col-xl-6 col-12">
+                                <h4 className="text-muted p-3 mb-3">Tasks:</h4>
+                                <ProgressTask />
+                                <ProgressTask />
+                                <ProgressTask />
+                                <ProgressTask />
+                                <ProgressTask />
+                            </div>
 
 
                         </div>

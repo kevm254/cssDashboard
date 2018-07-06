@@ -4,6 +4,8 @@ import Modal from './Modal/Modal';
 import Cards from './Cards/Cards';
 import Tables from './Tables/Tables';
 import Progress from './Progress/Progress';
+import Activities from './Activities/Activities';
+import Footer from './Footer/Footer';
 
 export default class App extends Component {
     render() {
@@ -14,6 +16,8 @@ export default class App extends Component {
                 <Cards />
                 <Tables />
                 <Progress />
+                <Activities />
+                <Footer />
             </main>
         )
     }

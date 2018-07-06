@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default (props) => {
+const PageItem = props => {
     let liClasses = props.isActive ? 'page-item active' : 'page-item';
 
     return (
@@ -10,4 +10,8 @@ export default (props) => {
             </a>
         </li>
     )
-}
+};
+
+
+
+export default PageItem;

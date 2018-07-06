@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default (props) => {
+const BrowserRates = (props) => {
     return (
         <div>
             <h6 className="mb-3">
@@ -15,3 +16,10 @@ export default (props) => {
         </div>
     )
 }
+
+BrowserRates.propTypes = {
+    browser: PropTypes.string,
+    percentage: PropTypes.string
+};
+
+export default BrowserRates;
